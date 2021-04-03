@@ -1,5 +1,7 @@
 import React from "react";
 
+import imageProfile from "../../assets/image.png";
+
 import "./hero.styles.scss";
 
 const Hero = () => (
@@ -12,8 +14,8 @@ const Hero = () => (
           portfolio.
         </p>
       </div>
-      <figure className="overlap-img">
-        <picture></picture>
+      <figure className="my-image-container">
+        <img className="imageProfile" src={imageProfile} alt="imageProfile" />
       </figure>
     </div>
   </div>
