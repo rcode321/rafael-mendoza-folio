@@ -9,8 +9,8 @@ import "./App.css";
 const App = () => (
   <div className="App">
     <Header />
-    <Routes />
     <Hero />
+    <Routes />
   </div>
 );
 
