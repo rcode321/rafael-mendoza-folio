@@ -1,8 +1,9 @@
-.navbar-container {
+.navbarcontainer {
   background-color: #161616;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+
   .nav {
     margin: 0 auto;
     max-width: 1200px;
@@ -12,7 +13,8 @@
 
     .logo {
       color: rgb(240, 240, 240);
-      font-size: 2rem;
+      font-size: 1.5rem;
+      align-items: center;
     }
   }
 
@@ -21,7 +23,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   .navbar__link {
@@ -43,5 +45,21 @@
     overflow: hidden;
     border-bottom: 3px solid #395ab0;
     transition: border-bottom 0.5s ease 0s;
+  }
+}
+
+.navbarcontainer.active {
+  background: #395ab0;
+  transition: 1500ms ease-in-out;
+
+  .navbar__link {
+    font-size: 1.3rem;
+    margin: 1.2rem;
+    transition: 300ms ease-in-out;
+    margin-top: 0.3rem;
+  }
+
+  .navbar__link--active {
+    border-bottom: 3px solid #ffffff;
   }
 }

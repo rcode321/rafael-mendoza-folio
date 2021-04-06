@@ -1,0 +1,77 @@
+.services-container {
+  .myservices-title {
+    padding-bottom: 2rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #727272;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  .service-content {
+    position: relative;
+    .tech-icon-container {
+      font-size: 5rem;
+
+      .tech-icon {
+        position: relative;
+        text-align: center;
+        padding-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1200px;
+        // pen title
+        .pen {
+          max-width: 500px;
+          .pen-title {
+            font-size: 2rem;
+            text-align: center;
+            color: #efefef;
+          }
+
+          .pen-subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            color: #efefef;
+          }
+        }
+        // pc title
+        .pc {
+          max-width: 500px;
+          grid-column: 2;
+
+          .pc-title {
+            font-size: 2rem;
+            text-align: center;
+            color: #efefef;
+          }
+
+          .pc-subtitle {
+            font-size: 1.2rem;
+            text-align: center;
+            color: #efefef;
+          }
+        }
+      }
+
+      .ready-to-talk {
+        text-align: center;
+        padding-top: 15rem;
+        font-weight: 500;
+      }
+    }
+
+    .rounded::after {
+      border-top: 1px solid #bbb;
+      border-radius: 5px;
+    }
+
+    .Bgseperator {
+      width: 100%;
+      height: 380px;
+      position: absolute;
+      top: 0;
+    }
+  }
+}
