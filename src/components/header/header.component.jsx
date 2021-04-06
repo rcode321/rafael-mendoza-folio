@@ -1,6 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-
+// import { NavLink } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
+import Scrollspy from "react-scrollspy";
 import "./header.styles.scss";
 
 const Header = () => {
@@ -9,35 +10,43 @@ const Header = () => {
       <div className="nav">
         <span className="logo">Logo</span>
         <nav className="navbar">
-          <NavLink
+          <NavHashLink
             exact
             activeClassName="navbar__link--active"
             className="navbar__link"
-            to="/home"
+            smooth
+            to="/#home"
           >
             Home
-          </NavLink>
-          <NavLink
+          </NavHashLink>
+
+          <Scrollspy items={["about"]} currentClassName="navbar__link--active">
+            <NavHashLink
+              activeClassName="navbar__link--active"
+              className="navbar__link"
+              smooth
+              to="/#about"
+            >
+              About
+            </NavHashLink>
+          </Scrollspy>
+          <NavHashLink
             activeClassName="navbar__link--active"
             className="navbar__link"
-            to="/about"
-          >
-            About
-          </NavLink>
-          <NavLink
-            activeClassName="navbar__link--active"
-            className="navbar__link"
-            to="/works"
+            smooth
+            to="/#project1"
           >
             Works
-          </NavLink>
-          <NavLink
+          </NavHashLink>
+
+          <NavHashLink
             activeClassName="navbar__link--active"
             className="navbar__link"
-            to="/contacts"
+            smooth
+            to="/#contacts"
           >
             Contacts
-          </NavLink>
+          </NavHashLink>
         </nav>
       </div>
     </nav>

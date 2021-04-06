@@ -1,5 +1,8 @@
 .navbar-container {
-  background-color: #303030;
+  background-color: #161616;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   .nav {
     margin: 0 auto;
     max-width: 1200px;
@@ -18,16 +21,18 @@
     justify-content: center;
     align-items: center;
     border-radius: 4px;
+    margin-top: 2rem;
   }
 
   .navbar__link {
-    margin: 1em;
-    font-size: 2em;
+    margin: 1rem;
+    font-size: 1.4rem;
     cursor: pointer;
     text-decoration: none;
     color: #f3f3f3;
     border-bottom: 3px solid transparent;
   }
+  font-weight: 400;
 
   .navbar__link:hover {
     transform: translateY(-1px);

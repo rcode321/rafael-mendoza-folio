@@ -1,9 +1,10 @@
 import React from "react";
 
-class Contacts extends React.PureComponent {
-  render() {
-    return <div></div>;
-  }
-}
+import "./contacts.styles.scss";
+const Contacts = () => (
+  <div className="contacts-container" id="contacts">
+    <h2>Contacts</h2>
+  </div>
+);
 
 export default Contacts;

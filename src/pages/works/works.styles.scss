@@ -1,0 +1,59 @@
+.project1-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-top: 12rem;
+
+  .featured-projects {
+    padding-bottom: 2rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #727272;
+  }
+
+  .rounded {
+    border-top: 1px solid #bbb;
+    border-radius: 5px;
+  }
+
+  .projects-content {
+    display: flex;
+    column-gap: 9rem;
+    margin-bottom: 40rem;
+    .projectimage-1 {
+      margin-top: 4rem;
+      width: 50%;
+    }
+
+    .content-1 {
+      margin-top: 2.5rem;
+      .Ecommerce-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-top: 4.5rem;
+      }
+      .Ecommerce-subtitle-1 {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        color: #808080;
+      }
+      .Ecommerce-subtitle-2 {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        color: #111111;
+        padding-bottom: 1rem;
+      }
+    }
+
+    // Icons
+    .content-2-icons {
+      font-size: 1.2rem;
+      display: flex;
+      grid-gap: 1rem;
+    }
+    .sass {
+      grid-column: 2;
+    }
+  }
+}
