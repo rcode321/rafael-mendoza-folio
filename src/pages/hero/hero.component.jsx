@@ -15,11 +15,11 @@ const Hero = () => (
             loop={Infinity}
             wrapper="b"
             steps={[
-              " Frontend Developer.",
+              " Frontend Developer 💻",
               1000,
-              " Designer. ✒️",
+              " Designer ✒️",
               1000,
-              " YouTuber.😁",
+              " YouTuber😁",
               1000,
             ]}
           />

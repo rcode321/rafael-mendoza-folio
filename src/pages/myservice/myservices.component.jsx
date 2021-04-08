@@ -7,11 +7,7 @@ import { MdComputer } from "react-icons/md";
 const Myservices = () => {
   return (
     <div className="services-container" id="myservice">
-      <div className="myservices-title">
-        my services.
-        <hr className="rounded" />
-      </div>
-
+      <div className="myservices-title">my services</div>
       <div className="service-content">
         <img className="Bgseperator" src={Bgseperator} alt="Bgseperator" />
         <div className="tech-icon-container">
@@ -20,8 +16,8 @@ const Myservices = () => {
               <RiPencilRulerFill style={{ color: "#ffca42" }} />
               <p className="pen-title">Web Design</p>
               <p className="pen-subtitle">
-                A website should be designed for all the people who will use it,
-                and user friendly is the main focused.
+                A website should be designed for all people who will use it, and
+                should be user friendly as the main focus.
               </p>
             </span>
             <span className="pc">
@@ -33,7 +29,6 @@ const Myservices = () => {
               </p>
             </span>
           </div>
-          <div className="ready-to-talk">Ready to Talk?</div>
         </div>
       </div>
     </div>

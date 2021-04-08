@@ -20,11 +20,6 @@ const Header = () => {
 
   return (
     <nav
-      // className={
-      //   navbarcontainer
-      //     ? "navbarcontainer active navbar__link"
-      //     : "navbarcontainer"
-      // }
       className={`navbarcontainer  
         ${navbarcontainer ? "active navbar__link navbar " : ""}`}
     >
@@ -66,7 +61,7 @@ const Header = () => {
             smooth
             to="/#contacts"
           >
-            Contacts
+            Contact
           </NavHashLink>
         </nav>
       </div>

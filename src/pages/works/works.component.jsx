@@ -21,7 +21,7 @@ import "./works.styles.scss";
 const Works = () => (
   <div className="project1-container">
     <div className="featured-projects">
-      featured projects.
+      featured projects
       <hr className="rounded" />
     </div>
 
@@ -34,8 +34,8 @@ const Works = () => (
       <div className="content-1">
         <div className="Ecommerce-title">E-commerce platform</div>
         <p className="Ecommerce-subtitle-1">
-          A simple Ecommerce website showcasing some functionalities and feature
-          of ecommerce website.
+          A simple Ecommerce website showcasing some functionalities and
+          features of an ecommerce website.
         </p>
 
         <p className="Ecommerce-subtitle-2">
@@ -73,33 +73,99 @@ const Works = () => (
       <div className="content-1">
         <div className="Ecommerce-title">Social Media App</div>
         <p className="Ecommerce-subtitle-1">
-          Social media app that you can create you’re own post, follow a user,
-          and message each other who already using the app.
+          Social media app that you can create your own post, follow a user, and
+          message each other who are already using the app.
         </p>
 
         <p className="Ecommerce-subtitle-2">
           Here are a few technologies I've been working with this project:
         </p>
+
         <div className="content-2-icons">
-          <span>
-            <AiFillHtml5 className="html" style={{ color: "#DD4B25" }} /> HTML5
-          </span>
-          <span>
-            <DiCss3 style={{ color: "#3658DE" }} /> Css
-          </span>
-          <span>
-            <IoLogoJavascript style={{ color: "#F5DE19" }} /> Javascript
-          </span>
-          <span className="sass">
-            <FaNodeJs style={{ color: "#87BF00" }} /> Nodejs
-          </span>
-          <span className="stripe">
-            <DiMongodb style={{ color: "#13A44D" }} /> MongoDB
-          </span>
-          <span className="stripe">
-            <SiSocketDotIo style={{ color: "#010101" }} /> Socket.io
-          </span>
+          <div className="icon-list__img">
+            <span>
+              <AiFillHtml5
+                style={{
+                  color: "#DD4B25",
+                  paddingTop: 3,
+                  paddingRight: 15,
+                }}
+                size={28}
+              />{" "}
+            </span>
+            HTML5
+          </div>
+          <div className="icon-list__img">
+            <span>
+              <DiCss3
+                style={{
+                  color: "#3658DE",
+                  paddingTop: 3,
+                  paddingRight: 15,
+                }}
+                size={28}
+              />{" "}
+            </span>
+            Css
+          </div>
+          <div className="icon-list__img">
+            <span>
+              <IoLogoJavascript
+                style={{
+                  color: "#F5DE19",
+                  paddingTop: 3,
+                  paddingRight: 15,
+                }}
+                size={28}
+              />
+            </span>
+            Javascript
+          </div>
         </div>
+
+        <div className="content-3-icons">
+          <div className="icon-list__img">
+            <span>
+              <FaNodeJs
+                style={{
+                  color: "#87BF00",
+                  paddingTop: 2,
+                  paddingRight: 15,
+                }}
+                size={28}
+              />
+            </span>
+            Nodejs
+          </div>
+
+          <div className="icon-list__img">
+            <span>
+              <DiMongodb
+                style={{
+                  color: "#13A44D",
+                  paddingTop: 4,
+                  paddingRight: 10,
+                }}
+                size={28}
+              />
+            </span>
+            MongoDB
+          </div>
+          <div className="icon-list__img">
+            <span>
+              <SiSocketDotIo
+                style={{
+                  color: "#010101",
+                  paddingTop: 4,
+                  paddingRight: 15,
+                }}
+                size={28}
+              />
+            </span>
+            Socket.io
+          </div>
+        </div>
+
         <Button />
       </div>
     </div>

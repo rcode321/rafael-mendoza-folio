@@ -1,3 +1,47 @@
 .contacts-container {
-  margin-top: 100rem;
+  background-color: #161616;
+  padding-top: 5rem;
+  margin-top: 10rem;
+  height: 300px;
+  clip-path: polygon(0 0, 100% 25%, 100% 100%, 0% 120%);
+
+  .contacts-content {
+    padding-top: 4rem;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: space-between;
+
+    .footer-col-1 {
+      color: white;
+
+      .footer-title {
+        font-size: 3rem;
+        font-weight: 500;
+      }
+    }
+
+    .footer-col-2 {
+      .icon-list {
+        padding-top: 0;
+        .icon-list__item {
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+
+      ul a {
+        text-decoration: none;
+        color: rgb(185, 184, 184);
+      }
+      a {
+        margin-top: 0.8rem;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+.icon-list__img {
+  display: flex;
+  align-items: center;
 }
