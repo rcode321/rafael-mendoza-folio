@@ -1,9 +1,10 @@
 .navbarcontainer {
   background-color: #161616;
   position: -webkit-sticky;
-  position: sticky;
+  position: relative;
   top: 0;
   z-index: 1;
+
   .nav {
     margin: 0 auto;
     max-width: 1200px;
@@ -15,6 +16,9 @@
       color: rgb(240, 240, 240);
       font-size: 1.5rem;
       align-items: center;
+    }
+    @media (max-width: 1250px) {
+      margin: 0 2rem;
     }
   }
 

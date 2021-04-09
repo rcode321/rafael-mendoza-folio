@@ -17,6 +17,21 @@ const Contacts = () => (
           <span>
             <span className="footer-title">Let’s Work Together</span>
             <p className="footer-subtitle">Build your business with us.</p>
+            <li className="icon-list__item email">
+              <div className="icon-list__img">
+                <span>
+                  <AiOutlineMail
+                    style={{
+                      paddingTop: 5,
+                      paddingRight: 15,
+                      color: "#D54338",
+                    }}
+                    size={18}
+                  />
+                </span>
+                <a href="mailto:seb@sebkay.com">rafaelmendoza004@gmail.com</a>
+              </div>
+            </li>
             <Button />
           </span>
         </div>
@@ -76,6 +91,7 @@ const Contacts = () => (
               </div>
             </li>
 
+            {/*}
             <li className="icon-list__item">
               <div className="icon-list__img">
                 <span>
@@ -91,6 +107,7 @@ const Contacts = () => (
                 <a href="mailto:seb@sebkay.com">rafaelmendoza004@gmail.com</a>
               </div>
             </li>
+                  {*/}
           </ul>
         </div>
       </div>

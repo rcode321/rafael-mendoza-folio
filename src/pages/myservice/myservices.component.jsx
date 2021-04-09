@@ -7,7 +7,9 @@ import { MdComputer } from "react-icons/md";
 const Myservices = () => {
   return (
     <div className="services-container" id="myservice">
-      <div className="myservices-title">my services</div>
+      <div className="myservices-title">
+        <p>my services</p>
+      </div>
       <div className="service-content">
         <img className="Bgseperator" src={Bgseperator} alt="Bgseperator" />
         <div className="tech-icon-container">

@@ -5,6 +5,9 @@
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 
   .site-banner_inner {
+    @media (max-width: 1250px) {
+      margin: 0 2rem;
+    }
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -24,6 +27,9 @@
       margin: 0;
       color: #f3f3f3;
       padding-top: 5rem;
+      @media (max-width: 985px) {
+        font-size: 9rem;
+      }
     }
 
     p {
@@ -33,6 +39,10 @@
       font-weight: 300;
       max-width: 700px;
       line-height: 164.9%;
+      @media (max-width: 985px) {
+        max-width: 600px;
+        font-size: 1.3rem;
+      }
     }
     .my-image-container {
       height: 410px;
@@ -40,10 +50,17 @@
       max-width: 280px;
       padding: 30px;
       border-radius: 0.5rem;
+      @media (max-width: 985px) {
+        padding: 23px;
+        height: 380px;
+      }
     }
     .imageProfile {
       max-width: 345px;
       border-radius: 0.5rem;
+      @media (max-width: 985px) {
+        width: 310px;
+      }
     }
   }
 }

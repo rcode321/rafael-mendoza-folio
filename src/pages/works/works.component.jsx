@@ -42,42 +42,99 @@ const Works = () => (
           Here are a few technologies I've been working with this project:
         </p>
         <div className="content-2-icons">
-          <span>
-            <FaReact className="react" style={{ color: "#5ED3F3" }} /> React
-          </span>
-          <span>
-            <SiRedux style={{ color: "#7248B6" }} /> Redux
-          </span>
-          <span>
-            <SiFirebase style={{ color: "#FFCA2A" }} /> Firebase
-          </span>
-          <span className="sass">
-            <FaSass style={{ color: "#C76494" }} /> Sass
-          </span>
-          <span className="stripe">
-            <GrStripe style={{ color: "#6772E5" }} /> Stripe
-          </span>
+          <div className="icon-list__img">
+            <span>
+              <FaReact
+                style={{
+                  color: "#5ED3F3",
+                  paddingTop: 3,
+                  paddingRight: 15,
+                }}
+                size={28}
+              />{" "}
+            </span>
+            React
+          </div>
+
+          <div className="icon-list__img">
+            <span>
+              <SiRedux
+                style={{
+                  color: "#7248B6",
+                  paddingTop: 3,
+                  paddingRight: 15,
+                }}
+                size={28}
+              />{" "}
+            </span>
+            Redux
+          </div>
+
+          <div className="icon-list__img">
+            <span>
+              <SiFirebase
+                style={{
+                  color: "#FFCA2A",
+                  paddingTop: 3,
+                  paddingRight: 15,
+                }}
+                size={28}
+              />{" "}
+            </span>
+            Firebase
+          </div>
+        </div>
+        <div className="icon-list-container ecom">
+          <div className="icon-list__img">
+            <span>
+              <FaSass
+                style={{
+                  color: "#C76494",
+                  paddingTop: 3,
+                  paddingRight: 15,
+                }}
+                size={28}
+              />{" "}
+            </span>
+            Sass
+          </div>
+          <div className="icon-list__img">
+            <span>
+              <GrStripe
+                style={{
+                  color: "#6772E5",
+                  paddingTop: 3,
+                  paddingRight: 15,
+                  paddingLeft: 10,
+                }}
+                size={28}
+              />{" "}
+            </span>
+            Stripe
+          </div>
         </div>
         <Button />
       </div>
     </div>
 
     {/* project 2 */}
-    <hr className="rounded" />
-    <div className="projects-content" id="project1">
+
+    <hr className="rounded-2" />
+    <div className="projects-content">
       <img
         className="projectimage-1"
         src={ProjectImage2}
         alt="projectimage-1"
       />
-      <div className="content-1">
-        <div className="Ecommerce-title">Social Media App</div>
-        <p className="Ecommerce-subtitle-1">
+
+      <div className="content-2">
+        <div className="social-media-title">Social Media App</div>
+        <p className="social-media-subtitle-1">
           Social media app that you can create your own post, follow a user, and
           message each other who are already using the app.
         </p>
 
-        <p className="Ecommerce-subtitle-2">
+        <p className="social-media-subtitle-2">
           Here are a few technologies I've been working with this project:
         </p>
 
@@ -101,7 +158,7 @@ const Works = () => (
                 style={{
                   color: "#3658DE",
                   paddingTop: 3,
-                  paddingRight: 15,
+                  paddingRight: 10,
                 }}
                 size={28}
               />{" "}
@@ -144,7 +201,7 @@ const Works = () => (
                 style={{
                   color: "#13A44D",
                   paddingTop: 4,
-                  paddingRight: 10,
+                  paddingRight: 1,
                 }}
                 size={28}
               />
@@ -157,7 +214,7 @@ const Works = () => (
                 style={{
                   color: "#010101",
                   paddingTop: 4,
-                  paddingRight: 15,
+                  paddingRight: 10,
                 }}
                 size={28}
               />
