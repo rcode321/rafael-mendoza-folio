@@ -1,9 +1,20 @@
 import React, { useState } from "react";
+import { NavHashLink } from "react-router-hash-link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import "./navbar.styles.scss";
 function Navbar() {
+  const [navbar, setNavbar] = useState(false);
+  const changeBackground = () => {
+    if (window.scrollY >= 500) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", changeBackground);
+
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
 
@@ -28,7 +39,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="navbar">
+      <nav className={`navbar ${navbar ? "active navbar__link navbar" : ""}`}>
         <div className="menu-icon" onClick={handleClick}>
           {click ? (
             <IoCloseSharp className="fa-close" />
@@ -41,49 +52,52 @@ function Navbar() {
         </Link>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
-            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+            <NavHashLink
+              onClick={closeMobileMenu}
+              exact
+              activeClassName="navbar__link--active"
+              className="navbar__link"
+              smooth
+              to="/#"
+            >
               Home
-            </Link>
+            </NavHashLink>
           </li>
+
           <li
             className="nav-item"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
-            <Link
-              to="/services"
-              className="nav-links"
+            <NavHashLink
+              activeClassName="navbar__link--active"
+              className="navbar__link"
+              smooth
               onClick={closeMobileMenu}
+              to="/#project1"
+            >
+              Projects
+            </NavHashLink>
+          </li>
+          <li className="nav-item">
+            <NavHashLink
+              activeClassName="navbar__link--active"
+              className="navbar__link"
+              smooth
+              to="/#myservice"
             >
               Services
-            </Link>
+            </NavHashLink>
           </li>
           <li className="nav-item">
-            <Link
-              to="/products"
-              className="nav-links"
-              onClick={closeMobileMenu}
+            <NavHashLink
+              activeClassName="navbar__link--active"
+              className="navbar__link"
+              smooth
+              to="/#contacts"
             >
-              Products
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/contact-us"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              Contact Us
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/sign-up"
-              className="nav-links-mobile"
-              onClick={closeMobileMenu}
-            >
-              Sign Up
-            </Link>
+              Contact
+            </NavHashLink>
           </li>
         </ul>
       </nav>

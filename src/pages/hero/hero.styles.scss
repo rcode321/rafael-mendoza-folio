@@ -3,7 +3,9 @@
   height: 600px;
   //   padding: 0 5rem;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-
+  @media screen and (max-width: 960px) {
+    z-index: 0;
+  }
   .site-banner_inner {
     @media (max-width: 1250px) {
       margin: 0 2rem;
