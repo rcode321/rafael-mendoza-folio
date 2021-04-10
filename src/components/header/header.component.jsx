@@ -19,57 +19,59 @@ const Header = () => {
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
   return (
-    <nav
-      className={`navbarcontainer  
-        ${navbarcontainer ? "active navbar__link navbar " : ""}`}
-    >
-      <div className="menu-icon" onClick={handleClick}>
-        <i className={click ? <GrClose /> : <GiHamburgerMenu />} />
-      </div>
-      <div className={click ? "nav-active" : "nav"}>
-        <span className="logo">Logo</span>
+    <>
+      <nav
+        className={`navbarcontainer  
+        ${navbarcontainer ? "active navbar__link  " : ""}`}
+      >
+        <div className="menu-icon" onClick={handleClick}>
+          <i className={click ? <GrClose /> : <GiHamburgerMenu />} />
+        </div>
+        <div className={click ? "nav-active" : "nav"}>
+          <span className="logo">Logo</span>
 
-        <nav className="navbar">
-          <NavHashLink
-            onClick={closeMobileMenu}
-            exact
-            activeClassName="navbar__link--active"
-            className="navbar__link"
-            smooth
-            to="/#"
-          >
-            Home
-          </NavHashLink>
+          <nav className="navbar">
+            <NavHashLink
+              onClick={closeMobileMenu}
+              exact
+              activeClassName="navbar__link--active"
+              className="navbar__link"
+              smooth
+              to="/#"
+            >
+              Home
+            </NavHashLink>
 
-          <NavHashLink
-            activeClassName="navbar__link--active"
-            className="navbar__link"
-            smooth
-            to="/#project1"
-          >
-            Works
-          </NavHashLink>
+            <NavHashLink
+              activeClassName="navbar__link--active"
+              className="navbar__link"
+              smooth
+              to="/#project1"
+            >
+              Works
+            </NavHashLink>
 
-          <NavHashLink
-            activeClassName="navbar__link--active"
-            className="navbar__link"
-            smooth
-            to="/#myservice"
-          >
-            My Services
-          </NavHashLink>
+            <NavHashLink
+              activeClassName="navbar__link--active"
+              className="navbar__link"
+              smooth
+              to="/#myservice"
+            >
+              My Services
+            </NavHashLink>
 
-          <NavHashLink
-            activeClassName="navbar__link--active"
-            className="navbar__link"
-            smooth
-            to="/#contacts"
-          >
-            Contact
-          </NavHashLink>
-        </nav>
-      </div>
-    </nav>
+            <NavHashLink
+              activeClassName="navbar__link--active"
+              className="navbar__link"
+              smooth
+              to="/#contacts"
+            >
+              Contact
+            </NavHashLink>
+          </nav>
+        </div>
+      </nav>
+    </>
   );
 };
 export default Header;

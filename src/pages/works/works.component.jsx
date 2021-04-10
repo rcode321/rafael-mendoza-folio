@@ -25,12 +25,10 @@ const Works = () => (
       <hr className="rounded" />
     </div>
 
-    <div className="projects-content" id="project1">
-      <img
-        className="projectimage-1"
-        src={ProjectImage1}
-        alt="projectimage-1"
-      />
+    <div className="projects-content" id="project">
+      <span className="image2-container">
+        <img className="image2" src={ProjectImage1} alt="projectimage-1" />
+      </span>
       <div className="content-1">
         <div className="Ecommerce-title">E-commerce platform</div>
         <p className="Ecommerce-subtitle-1">
@@ -121,17 +119,15 @@ const Works = () => (
 
     <hr className="rounded-2" />
     <div className="projects-content">
-      <img
-        className="projectimage-1"
-        src={ProjectImage2}
-        alt="projectimage-1"
-      />
+      <span className="image2-container">
+        <img className="image2" src={ProjectImage2} alt="projectimage-1" />
+      </span>
 
-      <div className="content-2">
+      <div className="content-1">
         <div className="social-media-title">Social Media App</div>
         <p className="social-media-subtitle-1">
           Social media app that you can create your own post, follow a user, and
-          message each other who are already using the app.
+          message each other who are using the app.
         </p>
 
         <p className="social-media-subtitle-2">

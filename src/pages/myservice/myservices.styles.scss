@@ -17,6 +17,9 @@
       font-size: 3rem;
       padding-bottom: 0;
     }
+    @media (max-width: 975px) {
+      text-align: center;
+    }
   }
 
   .service-content {
@@ -26,7 +29,16 @@
       @media (max-width: 1250px) {
         margin: 5rem;
       }
+
+      @media (max-width: 975px) {
+        display: flex;
+        padding: 0;
+        margin: 0;
+      }
       .tech-icon {
+        @media (max-width: 975px) {
+          margin: 1rem;
+        }
         font-size: 5rem;
         position: relative;
         text-align: center;
@@ -35,7 +47,6 @@
         justify-content: space-between;
         margin: 0 auto;
         max-width: 1200px;
-
         // pen title
         .pen {
           max-width: 500px;
@@ -50,10 +61,17 @@
             font-size: 1.2rem;
             text-align: center;
             color: #efefef;
+            @media (max-width: 975px) {
+              margin: 0;
+              font-size: 1rem;
+            }
           }
           @media (max-width: 1250px) {
             max-width: 400px;
-            padding-right: 5rem;
+            // padding-right: 5rem;
+          }
+          @media (max-width: 975px) {
+            margin: 1rem;
           }
         }
         // pc title
@@ -72,10 +90,16 @@
             font-size: 1.2rem;
             text-align: center;
             color: #efefef;
+            @media (max-width: 975px) {
+              margin: 0;
+              font-size: 1rem;
+            }
           }
           @media (max-width: 1250px) {
             max-width: 400px;
-            padding-left: 5rem;
+          }
+          @media (max-width: 975px) {
+            margin: 1rem;
           }
         }
       }
@@ -91,6 +115,9 @@
       height: 400px;
       position: absolute;
       top: 0;
+      @media (max-width: 975px) {
+        height: 600px;
+      }
     }
   }
 }

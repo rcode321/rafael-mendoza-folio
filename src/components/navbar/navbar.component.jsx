@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { NavHashLink } from "react-router-hash-link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./navbar.styles.scss";
+
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
   const changeBackground = () => {
@@ -16,30 +17,24 @@ function Navbar() {
   window.addEventListener("scroll", changeBackground);
 
   const [click, setClick] = useState(false);
-  const [dropdown, setDropdown] = useState(false);
+  //   const [dropdown, setDropdown] = useState(false);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(true);
-    }
-  };
-
-  const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
-  };
-
   return (
     <>
       <nav className={`navbar ${navbar ? "active navbar__link navbar" : ""}`}>
+        <div>
+          <NavHashLink
+            to="/#"
+            className="navbar-logo"
+            onClick={closeMobileMenu}
+            smooth
+          >
+            EPIC
+          </NavHashLink>
+        </div>
         <div className="menu-icon" onClick={handleClick}>
           {click ? (
             <IoCloseSharp className="fa-close" />
@@ -47,9 +42,6 @@ function Navbar() {
             <GiHamburgerMenu className="fa-bar" />
           )}
         </div>
-        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          EPIC
-        </Link>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
             <NavHashLink
@@ -64,17 +56,13 @@ function Navbar() {
             </NavHashLink>
           </li>
 
-          <li
-            className="nav-item"
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-          >
+          <li className="nav-item">
             <NavHashLink
               activeClassName="navbar__link--active"
               className="navbar__link"
               smooth
               onClick={closeMobileMenu}
-              to="/#project1"
+              to="/#project"
             >
               Projects
             </NavHashLink>
@@ -83,8 +71,9 @@ function Navbar() {
             <NavHashLink
               activeClassName="navbar__link--active"
               className="navbar__link"
+              onClick={closeMobileMenu}
               smooth
-              to="/#myservice"
+              to="/#services"
             >
               Services
             </NavHashLink>
@@ -93,6 +82,7 @@ function Navbar() {
             <NavHashLink
               activeClassName="navbar__link--active"
               className="navbar__link"
+              onClick={closeMobileMenu}
               smooth
               to="/#contacts"
             >
