@@ -1,4 +1,5 @@
 import React from "react";
+import { HashLink, NavHashLink } from "react-router-hash-link";
 // import HeroBgFooter from "../../assets/Hero BG-footer.png";
 import {
   AiOutlineMail,
@@ -32,7 +33,7 @@ const Contacts = () => (
                 <a href="mailto:seb@sebkay.com">rafaelmendoza004@gmail.com</a>
               </div>
             </li>
-            <Button />
+            <Button name="Get in Touch" />
           </span>
         </div>
 
@@ -51,26 +52,38 @@ const Contacts = () => (
                     size={28}
                   />
                 </span>
-                <a href="#/" target="_blank">
+                <HashLink
+                  className="link"
+                  to={{
+                    pathname: "https://github.com/rcode321",
+                  }}
+                  target="_blank"
+                >
                   On github
-                </a>
+                </HashLink>
               </div>
             </li>
             <li className="icon-list__item">
               <div className="icon-list__img">
                 <span>
                   <AiFillTwitterSquare
+                    className="icon-links"
                     style={{
-                      paddingTop: 15,
+                      paddingTop: 18,
                       paddingRight: 15,
                       color: "#4C9BE5",
                     }}
                     size={28}
                   />
                 </span>
-                <a href="#/" target="_blank">
-                  On Twitter
-                </a>
+                <HashLink
+                  className="link"
+                  to={{ pathname: "https://twitter.com/RafaelM77744594" }}
+                  target="_blank"
+                >
+                  {" "}
+                  on twitter
+                </HashLink>
               </div>
             </li>
             <li className="icon-list__item">
@@ -78,36 +91,25 @@ const Contacts = () => (
                 <span>
                   <AiFillLinkedin
                     style={{
-                      paddingTop: 15,
+                      paddingTop: 17,
                       paddingRight: 15,
                       color: "#0275B4",
                     }}
                     size={28}
                   />
                 </span>
-                <a href="#/" target="_blank">
+                <HashLink
+                  className="link"
+                  to={{
+                    pathname:
+                      "https://www.linkedin.com/in/rafael-mendoza-51467b193/",
+                  }}
+                  target="_blank"
+                >
                   On linkedin
-                </a>
+                </HashLink>
               </div>
             </li>
-
-            {/*}
-            <li className="icon-list__item">
-              <div className="icon-list__img">
-                <span>
-                  <AiOutlineMail
-                    style={{
-                      paddingTop: 16,
-                      paddingRight: 15,
-                      color: "#D54338",
-                    }}
-                    size={28}
-                  />
-                </span>
-                <a href="mailto:seb@sebkay.com">rafaelmendoza004@gmail.com</a>
-              </div>
-            </li>
-                  {*/}
           </ul>
         </div>
       </div>

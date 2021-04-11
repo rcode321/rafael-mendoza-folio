@@ -48,18 +48,18 @@
   .navbar__link--active {
     overflow: hidden;
     border-bottom: 3px solid #395ab0;
-    transition: border-bottom 0.5s ease 0s;
+    // transition: border-bottom 0.5s ease 0s;
   }
 }
 
-.navbarcontainer.active {
+.navbar.active {
   background: #395ab0;
-  transition: 1500ms ease-in-out;
+  transition: 1s ease-in-out;
 
   .navbar__link {
     font-size: 1.3rem;
     margin: 1.2rem;
-    transition: 300ms ease-in-out;
+    transition: 1s ease-in-out;
     margin-top: 0.3rem;
   }
 

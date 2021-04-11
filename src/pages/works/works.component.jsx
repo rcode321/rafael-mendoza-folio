@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaReact } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
 import { SiFirebase } from "react-icons/si";
@@ -117,7 +117,7 @@ const Works = () => (
           target="_blank"
         >
           {" "}
-          <Button />
+          <Button name="View Detals" />
         </HashLink>
       </div>
     </div>
@@ -231,7 +231,7 @@ const Works = () => (
           target="_blank"
         >
           {" "}
-          <Button />
+          <Button name="View Details" />
         </HashLink>
       </div>
     </div>

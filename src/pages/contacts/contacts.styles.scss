@@ -8,7 +8,7 @@
     height: 50vh;
   }
   @media (max-width: 490px) {
-    height: 500px;
+    height: 100px;
   }
   .contacts-content {
     @media (max-width: 1250px) {
@@ -60,11 +60,15 @@
         color: rgb(185, 184, 184);
       }
       a {
-        margin-top: 0.8rem;
+        margin-top: 1rem;
         font-size: 1.1rem;
       }
     }
 
+    .link:hover {
+      color: rgb(255, 255, 255);
+      transition: all 0.4s ease;
+    }
     .footer-subtitle {
       margin: 0;
       padding-top: 1rem;

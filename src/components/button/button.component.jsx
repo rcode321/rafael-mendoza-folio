@@ -2,6 +2,6 @@ import React from "react";
 
 import "./button.styles.scss";
 
-const Button = () => <button className="btn">View Details</button>;
+const Button = (props) => <button className="btn">{props.name}</button>;
 
 export default Button;
