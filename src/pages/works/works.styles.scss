@@ -16,6 +16,12 @@
     @media (max-width: 975px) {
       text-align: center;
     }
+    @media (max-width: 375px) {
+      font-size: 2.1rem;
+    }
+    @media (max-width: 360px) {
+      font-size: 2.4rem;
+    }
   }
   .rounded {
     border-top: 1px solid #bbb;
@@ -77,6 +83,15 @@
         text-align: center;
         padding-right: 0;
       }
+      @media (max-width: 460px) {
+        max-width: 300px;
+      }
+      @media (max-width: 414px) {
+        max-width: 200px;
+      }
+      @media (max-width: 375px) {
+        max-width: 500px;
+      }
       .Ecommerce-title {
         font-size: 2.5rem;
         font-weight: 600;
@@ -90,6 +105,9 @@
           margin-top: 1rem;
           font-weight: 700;
           color: #727272;
+        }
+        @media (max-width: 375px) {
+          font-size: 2rem;
         }
       }
       .Ecommerce-subtitle-1 {
@@ -105,6 +123,9 @@
           font-weight: 100;
           font-size: 1.2rem;
         }
+        // @media (max-width: 375px) {
+        //   max-width: 800px;
+        // }
       }
       .Ecommerce-subtitle-2 {
         font-size: 1rem;
@@ -147,6 +168,15 @@
         padding-right: 0;
       }
 
+      @media (max-width: 460px) {
+        padding: 0 5rem;
+      }
+      @media (max-width: 411px) {
+        padding: 0;
+      }
+      @media (max-width: 375px) {
+        max-width: 300px;
+      }
       line-height: 1.9rem;
       .social-media-title {
         font-size: 2.5rem;
@@ -160,6 +190,9 @@
           color: #727272;
           font-weight: 700;
           font-size: 2.1rem;
+        }
+        @media (max-width: 375px) {
+          font-size: 2rem;
         }
       }
 
@@ -192,6 +225,12 @@
       .icon-list__img {
         margin-right: 1rem;
         font-size: 1.2rem;
+        @media (max-width: 460px) {
+          font-size: 1rem;
+        }
+        @media (max-width: 360px) {
+          font-size: 0.8rem;
+        }
       }
       @media (max-width: 1235px) {
         font-size: 0.5rem;
@@ -209,15 +248,27 @@
         justify-content: center;
         text-align: center;
       }
+      @media (max-width: 460px) {
+        margin: 0 5rem;
+      }
       display: flex;
       align-items: center;
       padding-top: 1.2rem;
       .icon-list__img {
         font-size: 1.2rem;
         margin-right: 1rem;
+        @media (max-width: 460px) {
+          font-size: 1rem;
+        }
+        @media (max-width: 360px) {
+          font-size: 0.8rem;
+        }
       }
     }
 
+    .btn {
+      // width: 50%;
+    }
     .projectimage-1 {
       @media (max-width: 1085px) {
         width: 39%;

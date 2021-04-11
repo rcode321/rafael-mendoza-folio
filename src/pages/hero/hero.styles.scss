@@ -124,5 +124,31 @@
         padding-bottom: 5rem;
       }
     }
+
+    .aniText {
+      font-size: 1.3rem;
+      color: white;
+      @media (max-width: 360px) {
+        &::before {
+          content: "\A";
+          white-space: pre;
+          background-color: white;
+        }
+      }
+      @media (max-width: 411px) {
+        &::before {
+          content: "\A";
+          white-space: pre;
+          background-color: white;
+        }
+      }
+      @media (max-width: 414px) {
+        &::before {
+          content: "\A";
+          white-space: pre;
+          background-color: white;
+        }
+      }
+    }
   }
 }
