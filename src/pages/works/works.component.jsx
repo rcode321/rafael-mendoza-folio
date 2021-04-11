@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaReact } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
 import { SiFirebase } from "react-icons/si";
@@ -17,6 +17,7 @@ import ProjectImage1 from "../../assets/laptop-with-project-image2.png";
 import Button from "../../components/button/button.component";
 
 import "./works.styles.scss";
+import { HashLink, NavHashLink } from "react-router-hash-link";
 
 const Works = () => (
   <div className="project1-container">
@@ -111,7 +112,13 @@ const Works = () => (
             Stripe
           </div>
         </div>
-        <Button />
+        <HashLink
+          to={{ pathname: "https://bikes-avenue.herokuapp.com/" }}
+          target="_blank"
+        >
+          {" "}
+          <Button />
+        </HashLink>
       </div>
     </div>
 
@@ -219,7 +226,13 @@ const Works = () => (
           </div>
         </div>
 
-        <Button />
+        <HashLink
+          to={{ pathname: "https://konneckjs.herokuapp.com/" }}
+          target="_blank"
+        >
+          {" "}
+          <Button />
+        </HashLink>
       </div>
     </div>
   </div>
