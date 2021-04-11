@@ -9,9 +9,10 @@ const Hero = () => (
     <div className="site-banner_inner">
       <div className="site-banner_content">
         <h1>Hello.</h1>
-        <p>
+        <p className="site-banner-p">
           My name is Rafael Mendoza.
           <Typical
+            className="aniText"
             loop={Infinity}
             wrapper="b"
             steps={[

@@ -1,4 +1,12 @@
 .hero-container {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 902px) {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+  }
   background-color: #161616;
   height: 600px;
   //   padding: 0 5rem;
@@ -10,11 +18,17 @@
     @media (max-width: 1250px) {
       margin: 0 2rem;
     }
+    @media (max-width: 902px) {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1200px;
     padding-top: 3rem;
+
     .site-banner_content::after {
       content: "";
       background-color: #395ab0;
@@ -22,6 +36,22 @@
       height: 6px;
       display: block;
       margin-top: 1.5rem;
+      @media (max-width: 902px) {
+        max-width: 900px;
+        margin: 0;
+        margin-top: 1.5rem;
+      }
+      @media (max-width: 902px) {
+        max-width: 900px;
+        margin-top: 1.5rem;
+      }
+    }
+    .site-banner_content {
+      @media (max-width: 902px) {
+        max-width: 900px;
+        margin-bottom: 1em;
+        margin-top: 1rem;
+      }
     }
 
     h1 {
@@ -29,8 +59,15 @@
       margin: 0;
       color: #f3f3f3;
       padding-top: 5rem;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
       @media (max-width: 985px) {
         font-size: 9rem;
+      }
+      @media (max-width: 902px) {
+        font-size: 5rem;
+        padding: 0;
       }
     }
 
@@ -45,7 +82,12 @@
         max-width: 600px;
         font-size: 1.3rem;
       }
+      @media (max-width: 902px) {
+        color: rgb(190, 190, 190);
+        font-weight: 500;
+      }
     }
+
     .my-image-container {
       height: 410px;
       background-color: rgb(56, 56, 56);
@@ -53,8 +95,15 @@
       padding: 30px;
       border-radius: 0.5rem;
       @media (max-width: 985px) {
-        padding: 23px;
+        padding: 33px;
         height: 380px;
+      }
+      @media (max-width: 902px) {
+        max-width: 900px;
+        padding-bottom: 4rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
       }
     }
     .imageProfile {
@@ -62,6 +111,17 @@
       border-radius: 0.5rem;
       @media (max-width: 985px) {
         width: 310px;
+      }
+      @media (max-width: 902px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        max-width: 900px;
+      }
+      @media (max-width: 690px) {
+        max-width: 80%;
+        padding-bottom: 5rem;
       }
     }
   }
