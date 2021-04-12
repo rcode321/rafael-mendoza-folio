@@ -3,6 +3,12 @@
   max-width: 1200px;
   margin-top: 12rem;
 
+  @media (max-width: 320px) {
+    margin-top: 7rem;
+  }
+  @media (max-width: 375px) {
+    margin-top: 7rem;
+  }
   .featured-projects {
     padding-bottom: 2rem;
     font-size: 4rem;
@@ -21,6 +27,10 @@
     }
     @media (max-width: 360px) {
       font-size: 2.4rem;
+    }
+    @media (max-width: 320px) {
+      font-size: 2rem;
+      margin: 0 1rem;
     }
   }
   .rounded {
@@ -66,6 +76,9 @@
       @media (max-width: 690px) {
         max-width: 300px;
       }
+      @media (max-width: 320px) {
+        max-width: 210px;
+      }
     }
 
     .content-1 {
@@ -87,10 +100,13 @@
         max-width: 300px;
       }
       @media (max-width: 414px) {
-        max-width: 200px;
+        max-width: 400px;
+        line-height: 1rem;
       }
+
       @media (max-width: 375px) {
         max-width: 500px;
+        line-height: 1rem;
       }
       .Ecommerce-title {
         font-size: 2.5rem;
@@ -98,7 +114,11 @@
         margin-top: 1rem;
         padding-bottom: 1.3rem;
         @media (max-width: 1250px) {
-          font-size: 2.1rem;
+          font-size: 2.5rem;
+        }
+        @media (max-width: 411px) {
+          font-size: 1.5rem;
+          line-height: 1.7rem;
         }
 
         @media (max-width: 975px) {
@@ -122,6 +142,9 @@
           color: #000000;
           font-weight: 100;
           font-size: 1.2rem;
+        }
+        @media (max-width: 411px) {
+          max-width: 700px;
         }
         // @media (max-width: 375px) {
         //   max-width: 800px;
@@ -155,6 +178,10 @@
           justify-content: center;
           text-align: center;
         }
+
+        @media (max-width: 320px) {
+          font-size: 1.2;
+        }
       }
 
       .icon-list__img {
@@ -169,11 +196,11 @@
       }
 
       @media (max-width: 460px) {
-        padding: 0 5rem;
+        // padding: 0 5rem;
       }
-      @media (max-width: 411px) {
-        padding: 0;
-      }
+      // @media (max-width: 411px) {
+      //   max-width: 500px;
+      // }
       @media (max-width: 375px) {
         max-width: 300px;
       }
@@ -213,6 +240,7 @@
           font-size: 1rem;
           font-style: italic;
         }
+
         margin-bottom: 2rem;
       }
     }
@@ -266,9 +294,6 @@
       }
     }
 
-    .btn {
-      // width: 50%;
-    }
     .projectimage-1 {
       @media (max-width: 1085px) {
         width: 39%;

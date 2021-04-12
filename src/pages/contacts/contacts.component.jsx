@@ -1,5 +1,5 @@
 import React from "react";
-import { HashLink, NavHashLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 // import HeroBgFooter from "../../assets/Hero BG-footer.png";
 import {
   AiOutlineMail,

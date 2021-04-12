@@ -66,6 +66,10 @@
       @media (max-width: 490px) {
         font-size: 1.4rem;
       }
+      @media (max-width: 320px) {
+        font-size: 1.3rem;
+        line-height: 2.2rem;
+      }
     }
   }
   .quote-img {
