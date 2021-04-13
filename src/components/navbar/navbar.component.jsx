@@ -4,6 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
 // import { Link } from "react-router-dom";
 import "./navbar.styles.scss";
+import Mylogo from "../../assets/Group 9.svg";
 
 function Navbar() {
   const [navbar, setNavbar] = useState(false);
@@ -32,7 +33,7 @@ function Navbar() {
             onClick={closeMobileMenu}
             smooth
           >
-            EPIC
+            <img className="mylogo" src={Mylogo} alt="mylogo" />
           </NavHashLink>
         </div>
         <div className="menu-icon" onClick={handleClick}>

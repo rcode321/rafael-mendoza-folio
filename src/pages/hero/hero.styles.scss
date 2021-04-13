@@ -7,10 +7,11 @@
     justify-content: center;
     height: 90vh;
   }
-  background-color: #161616;
-  height: 600px;
-  //   padding: 0 5rem;
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  @media (max-width: 902px) {
+    height: 850px;
+  }
+  background-color: #000000;
+  height: 800px;
   @media screen and (max-width: 960px) {
     z-index: 0;
   }
@@ -36,6 +37,8 @@
       height: 6px;
       display: block;
       margin-top: 1.5rem;
+      padding-left: 0.5rem;
+      margin-left: 0.5rem;
       @media (max-width: 902px) {
         max-width: 900px;
         margin: 0;
@@ -78,6 +81,7 @@
       font-weight: 300;
       max-width: 700px;
       line-height: 164.9%;
+      padding-left: 0.5rem;
       @media (max-width: 985px) {
         max-width: 600px;
         font-size: 1.3rem;
@@ -89,28 +93,37 @@
     }
 
     .my-image-container {
-      height: 410px;
-      background-color: rgb(56, 56, 56);
-      max-width: 280px;
-      padding: 30px;
-      border-radius: 0.5rem;
+      // height: 410px;
+      // background-color: rgb(56, 56, 56);
+      // max-width: 280px;
+      // padding: 30px;
+      // border-radius: 0.5rem;
+      margin: 0;
       @media (max-width: 985px) {
         padding: 33px;
         height: 380px;
       }
       @media (max-width: 902px) {
-        max-width: 900px;
-        padding-bottom: 4rem;
+        max-width: 800px;
+        // padding-bottom: 1rem;
         display: block;
         margin-left: auto;
         margin-right: auto;
+
+        // height: 210px;
+        background-color: rgb(56, 56, 56);
+        max-width: 350px;
+        margin-bottom: 4rem;
+        // margin-bottom: 2rem;
+        border-radius: 0.5rem;
       }
       @media (max-width: 320px) {
         padding: 20px;
       }
     }
     .imageProfile {
-      max-width: 345px;
+      max-width: 445px;
+
       border-radius: 0.5rem;
       @media (max-width: 985px) {
         width: 310px;
@@ -119,8 +132,8 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
-        max-width: 900px;
+        width: 100%;
+        clip-path: inset(0 0 25% 0);
       }
       @media (max-width: 690px) {
         max-width: 90%;

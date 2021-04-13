@@ -113,6 +113,8 @@
         font-weight: 600;
         margin-top: 1rem;
         padding-bottom: 1.3rem;
+        line-height: 2.2rem;
+        color: #585858;
         @media (max-width: 1250px) {
           font-size: 2.5rem;
         }
@@ -210,6 +212,7 @@
         font-weight: 600;
         margin-top: 1rem;
         padding-bottom: 1.4rem;
+        color: #585858;
         @media (max-width: 1201px) {
           font-size: 2.2rem;
         }
@@ -221,27 +224,6 @@
         @media (max-width: 375px) {
           font-size: 2rem;
         }
-      }
-
-      .social-media-subtitle-1 {
-        @media (max-width: 975px) {
-          margin-top: 0.5rem;
-          color: #000000;
-          font-weight: 100;
-          font-size: 1.2rem;
-        }
-      }
-
-      .social-media-subtitle-2 {
-        @media (max-width: 975px) {
-          margin-top: 0.5rem;
-          color: #4e4e4e;
-          font-weight: 200;
-          font-size: 1rem;
-          font-style: italic;
-        }
-
-        margin-bottom: 2rem;
       }
     }
 

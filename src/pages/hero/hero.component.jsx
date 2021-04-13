@@ -1,7 +1,7 @@
 import React from "react";
 import Typical from "react-typical";
-import imageProfile from "../../assets/image.png";
-
+// import imageProfile from "../../assets/image.png";
+import Myimage from "../../assets/hero image.png";
 import "./hero.styles.scss";
 
 const Hero = () => (
@@ -28,7 +28,7 @@ const Hero = () => (
         <p>Here is my portfolio.</p>
       </div>
       <figure className="my-image-container">
-        <img className="imageProfile" src={imageProfile} alt="imageProfile" />
+        <img className="imageProfile" src={Myimage} alt="imageProfile" />
       </figure>
     </div>
   </div>

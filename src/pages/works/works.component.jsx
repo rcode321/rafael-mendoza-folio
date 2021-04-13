@@ -17,7 +17,7 @@ import ProjectImage1 from "../../assets/laptop-with-project-image2.png";
 import Button from "../../components/button/button.component";
 
 import "./works.styles.scss";
-import { HashLink, NavHashLink } from "react-router-hash-link";
+import { HashLink } from "react-router-hash-link";
 
 const Works = () => (
   <div className="project1-container">
@@ -31,15 +31,12 @@ const Works = () => (
         <img className="image2" src={ProjectImage1} alt="projectimage-1" />
       </span>
       <div className="content-1">
-        <div className="Ecommerce-title">E-commerce platform</div>
+        <div className="Ecommerce-title">Shopping Cart</div>
         <p className="Ecommerce-subtitle-1">
           A simple Ecommerce website showcasing some functionalities and
           features of an ecommerce website.
         </p>
 
-        <p className="Ecommerce-subtitle-2">
-          Here are a few technologies I've been working with this project:
-        </p>
         <div className="content-2-icons">
           <div className="icon-list__img">
             <span>
@@ -52,7 +49,6 @@ const Works = () => (
                 size={28}
               />{" "}
             </span>
-            React
           </div>
 
           <div className="icon-list__img">
@@ -66,7 +62,6 @@ const Works = () => (
                 size={28}
               />{" "}
             </span>
-            Redux
           </div>
 
           <div className="icon-list__img">
@@ -80,10 +75,7 @@ const Works = () => (
                 size={28}
               />{" "}
             </span>
-            Firebase
           </div>
-        </div>
-        <div className="icon-list-container ecom">
           <div className="icon-list__img">
             <span>
               <FaSass
@@ -95,7 +87,6 @@ const Works = () => (
                 size={28}
               />{" "}
             </span>
-            Sass
           </div>
           <div className="icon-list__img">
             <span>
@@ -109,9 +100,9 @@ const Works = () => (
                 size={28}
               />{" "}
             </span>
-            Stripe
           </div>
         </div>
+        <div className="icon-list-container ecom"></div>
         <HashLink
           to={{ pathname: "https://bikes-avenue.herokuapp.com/" }}
           target="_blank"
@@ -137,10 +128,6 @@ const Works = () => (
           message each other who are using the app.
         </p>
 
-        <p className="social-media-subtitle-2">
-          Here are a few technologies I've been working with this project:
-        </p>
-
         <div className="content-2-icons">
           <div className="icon-list__img">
             <span>
@@ -153,7 +140,6 @@ const Works = () => (
                 size={28}
               />{" "}
             </span>
-            HTML5
           </div>
           <div className="icon-list__img">
             <span>
@@ -166,7 +152,6 @@ const Works = () => (
                 size={28}
               />{" "}
             </span>
-            Css
           </div>
           <div className="icon-list__img">
             <span>
@@ -179,11 +164,7 @@ const Works = () => (
                 size={28}
               />
             </span>
-            Javascript
           </div>
-        </div>
-
-        <div className="content-3-icons">
           <div className="icon-list__img">
             <span>
               <FaNodeJs
@@ -195,9 +176,7 @@ const Works = () => (
                 size={28}
               />
             </span>
-            Nodejs
           </div>
-
           <div className="icon-list__img">
             <span>
               <DiMongodb
@@ -209,7 +188,6 @@ const Works = () => (
                 size={28}
               />
             </span>
-            MongoDB
           </div>
           <div className="icon-list__img">
             <span>
@@ -222,9 +200,9 @@ const Works = () => (
                 size={28}
               />
             </span>
-            Socket.io
           </div>
         </div>
+        <div className="content-3-icons"></div>
 
         <HashLink
           to={{ pathname: "https://konneckjs.herokuapp.com/" }}
