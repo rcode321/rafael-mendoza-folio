@@ -11,6 +11,9 @@
     padding-top: 6rem;
     margin-bottom: 5rem;
   }
+  @media (max-width: 360px) {
+    height: 500px;
+  }
   position: relative;
   // max-width: 1200px;
   // margin: 0 auto;
@@ -46,6 +49,9 @@
     .testimonials-content {
       position: relative;
       padding-bottom: 1rem;
+      @media (max-width: 360px) {
+        padding: 0;
+      }
     }
     .message {
       font-size: 2.25rem;
@@ -80,6 +86,9 @@
       border-radius: 50%;
       width: 100px;
       margin: 2rem;
+    }
+    @media (max-width: 360px) {
+      padding-bottom: 4rem;
     }
   }
 

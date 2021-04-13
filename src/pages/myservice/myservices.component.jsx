@@ -1,8 +1,13 @@
 import React from "react";
 import "./myservices.styles.scss";
-import Bgseperator from "../../assets/Hero BG2.png";
+import Bgseperator from "../../assets/Bgseperator.jpg";
 import { RiPencilRulerFill } from "react-icons/ri";
 import { MdComputer } from "react-icons/md";
+import { GiPencilBrush } from "react-icons/gi";
+import { RiComputerLine } from "react-icons/ri";
+
+import Myservices1 from "../../assets/myservices-1.svg";
+import Myservices2 from "../../assets/myservices-2.svg";
 
 const Myservices = () => {
   return (
@@ -15,7 +20,10 @@ const Myservices = () => {
         <div className="tech-icon-container">
           <div className="tech-icon">
             <span className="pen">
-              <RiPencilRulerFill style={{ color: "#ffca42" }} />
+              {/* <GiPencilBrush style={{ color: "#ffca42" }} /> */}
+              <div className="myservices-1">
+                <img src={Myservices1} alt="myservices-1" />
+              </div>
               <p className="pen-title">Web Design</p>
               <p className="pen-subtitle">
                 A website should be designed for all people who will use it, and
@@ -23,7 +31,10 @@ const Myservices = () => {
               </p>
             </span>
             <span className="pc">
-              <MdComputer style={{ color: "#ffca42" }} />
+              <div className="myservices-2">
+                <img src={Myservices2} alt="myservices2" />
+              </div>
+              {/* <RiComputerLine style={{ color: "#ffca42" }} />*/}
               <p className="pc-title">Web Development</p>
               <p className="pc-subtitle">
                 A website should be designed for all the people who will use it,

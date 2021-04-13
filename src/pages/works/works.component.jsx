@@ -123,7 +123,7 @@ const Works = () => (
 
       <div className="content-1">
         <div className="social-media-title">Social Media App</div>
-        <p className="social-media-subtitle-1">
+        <p className="Ecommerce-subtitle-1">
           Social media app that you can create your own post, follow a user, and
           message each other who are using the app.
         </p>

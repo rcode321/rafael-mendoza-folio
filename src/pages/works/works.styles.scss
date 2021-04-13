@@ -108,6 +108,7 @@
         max-width: 500px;
         line-height: 1rem;
       }
+
       .Ecommerce-title {
         font-size: 2.5rem;
         font-weight: 600;
@@ -147,6 +148,11 @@
         }
         @media (max-width: 411px) {
           max-width: 700px;
+        }
+
+        @media (max-width: 320px) {
+          font-size: 1rem;
+          color: #585858;
         }
         // @media (max-width: 375px) {
         //   max-width: 800px;
@@ -240,6 +246,9 @@
         }
         @media (max-width: 360px) {
           font-size: 0.8rem;
+        }
+        @media (max-width: 320px) {
+          margin: 0 0.2rem;
         }
       }
       @media (max-width: 1235px) {
