@@ -1,29 +1,24 @@
 import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-// import Routes from "./routes/routes";
-import Works from "./pages/works/works.component";
-// import Header from "./components/header/header.component";
 import Navbar from "./components/navbar/navbar.component";
-import Hero from "./pages/hero/hero.component";
-import Contacts from "./pages/contacts/contacts.component";
-import Myservices from "./pages/myservice/myservices.component";
-import Footer from "./pages/footer/footer.component";
-import Testimonials from "./pages/testimonials/testimonials.component";
+
+import ContactUs from "./components/contact-form/contact-form.component";
+import Homepage from "./components/homepage/homepage.component";
 
 import "./App.css";
 
-const App = () => (
-  <div className="App">
-    <div className="container">
+const App = () => {
+  return (
+    <Router>
       <Navbar />
-      <Hero />
-      <Works />
-      <Myservices />
-      <Testimonials />
-      <Contacts />
-      <Footer />
-    </div>
-  </div>
-);
+
+      <Switch>
+        <Route exact path="/" component={Homepage} />
+        <Route exact path="/sign-up" component={ContactUs} />
+      </Switch>
+    </Router>
+  );
+};
 
 export default App;

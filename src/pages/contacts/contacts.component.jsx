@@ -1,5 +1,6 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
+import { Link, Switch, Route } from "react-router-dom";
 // import HeroBgFooter from "../../assets/Hero BG-footer.png";
 import {
   AiOutlineMail,
@@ -8,8 +9,11 @@ import {
   AiFillLinkedin,
 } from "react-icons/ai";
 
-import Button from "../../components/button/button.component";
+// import ContactUs from "../../components/contact-form/contact-form.component";
+import Button from "../../components/form-btn/form-btn.component";
+import FormBtn from "../../components/form-btn/form-btn.component";
 import "./contacts.styles.scss";
+
 const Contacts = () => (
   <div className="contacts-container" id="contacts">
     <div className="contacts-content-container">
@@ -33,7 +37,7 @@ const Contacts = () => (
                 <a href="mailto:seb@sebkay.com">rafaelmendoza004@gmail.com</a>
               </div>
             </li>
-            <Button name="Get in Touch" />
+            <FormBtn />
           </span>
         </div>
 
