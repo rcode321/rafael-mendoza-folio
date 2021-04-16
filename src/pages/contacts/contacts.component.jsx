@@ -27,14 +27,14 @@ const Contacts = () => (
                 <span>
                   <AiOutlineMail
                     style={{
-                      paddingTop: 5,
+                      paddingTop: 7,
                       paddingRight: 15,
                       color: "#D54338",
                     }}
                     size={18}
                   />
                 </span>
-                <a href="mailto:seb@sebkay.com">rafaelmendoza004@gmail.com</a>
+                <span className="myEmail">rafaelmendoza004@gmail.com</span>
               </div>
             </li>
             <FormBtn />

@@ -36,7 +36,9 @@ const Works = () => (
           A simple Ecommerce website showcasing some functionalities and
           features of an ecommerce website.
         </p>
-
+        <span className="worksSubtitle">
+          Technologies i use in this project:
+        </span>
         <div className="content-2-icons">
           <div className="icon-list__img">
             <span>
@@ -127,7 +129,9 @@ const Works = () => (
           Social media app that you can create your own post, follow a user, and
           message each other who are using the app.
         </p>
-
+        <span className="worksSubtitle">
+          Design and Develop by Rafael Mendoza.
+        </span>
         <div className="content-2-icons">
           <div className="icon-list__img">
             <span>

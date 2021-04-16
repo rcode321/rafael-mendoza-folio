@@ -34,16 +34,16 @@
     }
   }
   .rounded {
-    border-top: 1px solid #bbb;
-    border-radius: 5px;
+    border: 3px solid rgb(241, 240, 240);
+    border-radius: 6px;
     @media (max-width: 1250px) {
       margin: 0 0.2rem;
       margin-top: 5rem;
     }
   }
   .rounded-2 {
-    border-top: 1px solid #bbb;
-    border-radius: 5px;
+    border: 3px solid rgb(241, 240, 240);
+    border-radius: 6px;
     @media (max-width: 1250px) {
       margin: 0 5rem;
       margin-top: 5rem;
@@ -134,17 +134,18 @@
         }
       }
       .Ecommerce-subtitle-1 {
-        font-size: 1.1rem;
-        line-height: 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 100;
+        line-height: 2rem;
         color: #808080;
         @media (max-width: 1250px) {
-          font-size: 1rem;
+          font-size: 1.3rem;
         }
         @media (max-width: 975px) {
           margin-top: 0.5rem;
-          color: #000000;
+          color: #808080;
           font-weight: 100;
-          font-size: 1.2rem;
+          font-size: 1.4rem;
         }
         @media (max-width: 411px) {
           max-width: 700px;
@@ -154,10 +155,17 @@
           font-size: 1rem;
           color: #585858;
         }
-        // @media (max-width: 375px) {
-        //   max-width: 800px;
-        // }
+        @media (max-width: 360px) {
+          font-size: 1rem;
+        }
       }
+
+      .worksSubtitle {
+        font-weight: 400;
+        font-size: 1rem;
+        color: #6d6d6d;
+      }
+
       .Ecommerce-subtitle-2 {
         font-size: 1rem;
         font-weight: 500;
@@ -225,7 +233,7 @@
         @media (max-width: 975px) {
           color: #727272;
           font-weight: 700;
-          font-size: 2.1rem;
+          font-size: 2.5rem;
         }
         @media (max-width: 375px) {
           font-size: 2rem;
@@ -238,16 +246,25 @@
       font-size: 1.2rem;
       display: flex;
       align-items: center;
+
       .icon-list__img {
         margin-right: 1rem;
         font-size: 1.2rem;
+        padding-top: 1rem;
         @media (max-width: 460px) {
-          font-size: 1rem;
+          margin: 0.6rem;
+        }
+        @media (max-width: 411px) {
+          margin: 0 0.2rem;
         }
         @media (max-width: 360px) {
           font-size: 0.8rem;
+          margin: 0.2rem;
         }
         @media (max-width: 320px) {
+          margin: 0 0.2rem;
+        }
+        @media (max-width: 375px) {
           margin: 0 0.2rem;
         }
       }

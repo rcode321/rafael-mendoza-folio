@@ -1,4 +1,8 @@
 .hero-container {
+  background-color: #000000;
+  height: 800px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -10,8 +14,7 @@
   @media (max-width: 902px) {
     height: 850px;
   }
-  background-color: #000000;
-  height: 800px;
+
   @media screen and (max-width: 960px) {
     z-index: 0;
   }
@@ -39,6 +42,9 @@
       margin-top: 1.5rem;
       padding-left: 0.5rem;
       margin-left: 0.5rem;
+      border-radius: 20px;
+      width: 200px;
+      position: absolute;
       @media (max-width: 902px) {
         max-width: 900px;
         margin: 0;

@@ -98,7 +98,15 @@
     }
     .footer-subtitle {
       margin: 0;
-      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-top: 0.5rem;
+      color: rgb(221, 222, 224);
+      font-weight: 300;
+      font-size: 1.3rem;
+    }
+
+    .myEmail {
+      font-weight: 100;
     }
   }
 }

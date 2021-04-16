@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Typical from "react-typical";
 // import imageProfile from "../../assets/image.png";
 import Myimage from "../../assets/hero image.png";
@@ -12,17 +12,19 @@ const Hero = () => (
         <p className="site-banner-p">
           My name is Rafael Mendoza.
           <Typical
-            className="aniText"
             loop={Infinity}
+            className="aniText"
             wrapper="b"
-            steps={[
-              " Frontend Developer 💻",
-              1000,
-              " Designer ✒️",
-              1000,
-              " YouTuber😁",
-              1000,
-            ]}
+            steps={
+              useRef([
+                "Frontend Developer💻",
+                1000,
+                " Designer ✒️",
+                1000,
+                " YouTuber😁",
+                1000,
+              ]).current
+            }
           />
         </p>
         <p>Here is my portfolio.</p>
