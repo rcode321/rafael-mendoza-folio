@@ -1,0 +1,22 @@
+.footer-container {
+  background-color: black;
+  width: 100%;
+  height: 110px;
+}
+
+.footer-container .footer-content {
+  margin: 0;
+  color: #5e5e5e;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+@media (max-width: 320px) {
+  .footer-container .footer-content {
+    font-size: 0.7rem;
+  }
+}
+/*# sourceMappingURL=footer.styles.css.map */

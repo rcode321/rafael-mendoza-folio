@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Typical from "react-typical";
 // import imageProfile from "../../assets/image.png";
-import Myimage from "../../assets/hero image.png";
+import Myimage from "../../assets/hero image2.png";
 import "./hero.styles.scss";
 
 const Hero = () => (

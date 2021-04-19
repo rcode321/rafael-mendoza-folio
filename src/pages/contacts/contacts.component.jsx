@@ -31,7 +31,7 @@ const Contacts = () => (
                       paddingRight: 15,
                       color: "#D54338",
                     }}
-                    size={18}
+                    size={35}
                   />
                 </span>
                 <span className="myEmail">rafaelmendoza004@gmail.com</span>
@@ -53,7 +53,7 @@ const Contacts = () => (
                       paddingRight: 15,
                       color: "#ffff",
                     }}
-                    size={28}
+                    size={45}
                   />
                 </span>
                 <HashLink
@@ -77,7 +77,7 @@ const Contacts = () => (
                       paddingRight: 15,
                       color: "#4C9BE5",
                     }}
-                    size={28}
+                    size={45}
                   />
                 </span>
                 <HashLink
@@ -99,7 +99,7 @@ const Contacts = () => (
                       paddingRight: 15,
                       color: "#0275B4",
                     }}
-                    size={28}
+                    size={45}
                   />
                 </span>
                 <HashLink

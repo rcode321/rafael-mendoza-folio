@@ -4,8 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // font-size: 1.2rem;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -33,15 +31,6 @@
   margin-top: 2rem;
 }
 
-// .navbar-logo {
-//   color: #fff;
-//   justify-self: start;
-//   margin-left: 20px;
-//   cursor: pointer;
-//   text-decoration: none;
-//   font-size: 2rem;
-// }
-
 .mylogo {
   color: #fff;
   justify-self: start;
@@ -63,22 +52,24 @@
   display: flex;
   align-items: center;
   height: 80px;
-  :hover {
-    color: #ffffff;
-    transition: 400ms ease;
-  }
+}
+
+.nav-item :hover {
+  color: #ffffff;
+  transition: 400ms ease;
 }
 
 .navbar__link {
-  color: rgb(250, 249, 249);
+  color: #bebebe;
   text-decoration: none;
   padding: 0.5rem 1rem;
   font-weight: 600;
-  .navbar__link:hover {
-    transition: 300ms ease-in-out;
-    border-radius: 4px;
-    background-color: #3e70f0;
-  }
+}
+
+.navbar__link .navbar__link:hover {
+  transition: 300ms ease-in-out;
+  border-radius: 4px;
+  background-color: #3e70f0;
 }
 
 .fa-close {
@@ -119,13 +110,11 @@
   .nav-menu.active {
     background: #242424;
     top: 100%;
-    // top: 20px;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
     padding-top: 7rem;
   }
-
   .nav-item :hover {
     background: #395ab0;
     display: flex;
@@ -134,34 +123,24 @@
     padding: 1rem;
     transition: all 0.2s ease;
   }
-
   .navbar__link {
     text-align: center;
     width: 100%;
   }
-
   .navbar.active {
     background: #395ab0;
     transition: 1ms ease;
     padding: 0;
-    .navbar__link {
-      font-size: 1rem;
-      // margin: 1.2rem;
-    }
   }
-  // .navbar-logo {
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   transform: translate(25%, 50%);
-  // }
+  .navbar.active .navbar__link {
+    font-size: 1rem;
+  }
   .mylogo {
     position: absolute;
     top: -27px;
     left: 0;
     transform: translate(25%, 50%);
   }
-
   .menu-icon {
     display: block;
     position: absolute;
@@ -172,23 +151,5 @@
     cursor: pointer;
     margin-top: -0.5rem;
   }
-
-  // .nav-links-mobile {
-  //   display: block;
-  //   text-align: center;
-  //   padding: 1.5rem;
-  //   margin: 2rem auto;
-  //   border-radius: 4px;
-  //   width: 80%;
-  //   background: #1888ff;
-  //   text-decoration: none;
-  //   color: #fff;
-  //   font-size: 1.5rem;
-  // }
-
-  // .nav-links-mobile:hover {
-  //   background: #fff;
-  //   color: #1888ff;
-  //   transition: 250ms;
-  // }
 }
+/*# sourceMappingURL=navbar.styles.css.map */

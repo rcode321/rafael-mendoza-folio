@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import aos from "aos";
+
 import "./myservices.styles.scss";
 import Bgseperator from "../../assets/Bgseperator.jpg";
-import { RiPencilRulerFill } from "react-icons/ri";
-import { MdComputer } from "react-icons/md";
-import { GiPencilBrush } from "react-icons/gi";
-import { RiComputerLine } from "react-icons/ri";
-
 import Myservices1 from "../../assets/myservices-1.svg";
 import Myservices2 from "../../assets/myservices-2.svg";
 
 const Myservices = () => {
+  useEffect(() => {
+    aos.init();
+  }, []);
   return (
     <div className="services-container" id="services">
       <div className="myservices-title">
@@ -20,7 +20,6 @@ const Myservices = () => {
         <div className="tech-icon-container">
           <div className="tech-icon">
             <span className="pen">
-              {/* <GiPencilBrush style={{ color: "#ffca42" }} /> */}
               <div className="myservices-1">
                 <img src={Myservices1} alt="myservices-1" />
               </div>

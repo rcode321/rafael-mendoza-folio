@@ -4,6 +4,9 @@
     padding-top: 10rem;
   }
 
+  @media (max-width: 973px) {
+    padding-top: 3rem;
+  }
   .myservices-title {
     padding-bottom: 3rem;
     font-size: 4rem;
@@ -148,7 +151,7 @@
       }
       @media (max-width: 690px) {
         width: 100%;
-        height: 900px;
+        height: 1500px;
       }
       @media (max-width: 375px) {
         height: 1200px;

@@ -40,18 +40,21 @@ function ContactUs() {
       <div className="form-container">
         <form className="form" onSubmit={sendEmail} autoComplete="off">
           <input
+            required
             name="hidden"
             type="text"
             className="feedback-input"
             placeholder="Name"
           />
           <input
+            required
             name="email"
             type="email"
             className="feedback-input"
             placeholder="Email"
           />
           <textarea
+            required
             name="message"
             className="feedback-input"
             placeholder="Message"

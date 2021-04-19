@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+// import "aos/dist/aos.css";
+
 import { FaReact } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
 import { SiFirebase } from "react-icons/si";
@@ -12,212 +15,248 @@ import { FaNodeJs } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
 import { SiSocketDotIo } from "react-icons/si";
 
-import ProjectImage2 from "../../assets/laptop-with-project-image3.png";
-import ProjectImage1 from "../../assets/laptop-with-project-image2.png";
+import ProjectImage1 from "../../assets/project2.png";
+import ProjectImage2 from "../../assets/project1.png";
 import Button from "../../components/button/button.component";
-
 import "./works.styles.scss";
 import { HashLink } from "react-router-hash-link";
 
-const Works = () => (
-  <div className="project1-container">
-    <div className="featured-projects">
-      featured projects
+const Works = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+  return (
+    <div className="project--container" id="project">
+      <div className="featured-projects">featured projects</div>
       <hr className="rounded" />
-    </div>
 
-    <div className="projects-content" id="project">
-      <span className="image2-container">
-        <img className="image2" src={ProjectImage1} alt="projectimage-1" />
-      </span>
-      <div className="content-1">
-        <div className="Ecommerce-title">Shopping Cart</div>
-        <p className="Ecommerce-subtitle-1">
-          A simple Ecommerce website showcasing some functionalities and
-          features of an ecommerce website.
-        </p>
-        <span className="worksSubtitle">
-          Technologies i use in this project:
+      <div className="projects">
+        <span className="projects projects__img " data-aos="zoom-in">
+          <img className="myimage" src={ProjectImage1} alt="projectimage-1" />
         </span>
-        <div className="content-2-icons">
-          <div className="icon-list__img">
-            <span>
-              <FaReact
-                style={{
-                  color: "#5ED3F3",
-                  paddingTop: 3,
-                  paddingRight: 15,
-                }}
-                size={28}
-              />{" "}
-            </span>
-          </div>
+        <div className="projects__content" data-aos="zoom-in">
+          <div className="projects__title">Shopping Cart</div>
+          <p className="projects__subtitle">
+            A simple Ecommerce website showcasing some functionalities and
+            features of an ecommerce website.
+          </p>
+          <div className="projects__icons">
+            <div className="projects__Iconitem">
+              <span>
+                <FaReact
+                  style={{
+                    borderRadius: "50%",
+                    width: "30px",
+                    height: "30px",
+                    backgroundColor: "#5ED3F3",
+                    color: "white",
+                    padding: "5px",
+                  }}
+                  size={28}
+                />{" "}
+              </span>
+            </div>
 
-          <div className="icon-list__img">
-            <span>
-              <SiRedux
-                style={{
-                  color: "#7248B6",
-                  paddingTop: 3,
-                  paddingRight: 15,
-                }}
-                size={28}
-              />{" "}
-            </span>
-          </div>
+            <div className="projects__Iconitem">
+              <span>
+                <SiRedux
+                  style={{
+                    borderRadius: "50%",
+                    width: "30px",
+                    height: "30px",
+                    backgroundColor: "#7248B6",
+                    color: "white",
+                    padding: "5px",
+                  }}
+                  size={25}
+                />{" "}
+              </span>
+            </div>
 
-          <div className="icon-list__img">
-            <span>
-              <SiFirebase
-                style={{
-                  color: "#FFCA2A",
-                  paddingTop: 3,
-                  paddingRight: 15,
-                }}
-                size={28}
-              />{" "}
-            </span>
+            <div className="projects__Iconitem">
+              <span>
+                <SiFirebase
+                  style={{
+                    color: "white",
+                    borderRadius: "50%",
+                    width: "30px",
+                    height: "30px",
+                    backgroundColor: "#FFCB2B",
+                    padding: "5px",
+                  }}
+                  size={28}
+                />{" "}
+              </span>
+            </div>
+            <div className="projects__Iconitem">
+              <span>
+                <FaSass
+                  style={{
+                    color: "white",
+                    borderRadius: "50%",
+                    width: "30px",
+                    height: "30px",
+                    backgroundColor: "#C76494",
+                    padding: "5px",
+                  }}
+                  size={28}
+                />{" "}
+              </span>
+            </div>
+            <div className="projects__Iconitem">
+              <span>
+                <GrStripe
+                  style={{
+                    color: "white",
+                    borderRadius: "50%",
+                    width: "30px",
+                    height: "30px",
+                    backgroundColor: "#6772E5",
+                    padding: "5px",
+                  }}
+                  size={28}
+                />{" "}
+              </span>
+            </div>
           </div>
-          <div className="icon-list__img">
-            <span>
-              <FaSass
-                style={{
-                  color: "#C76494",
-                  paddingTop: 3,
-                  paddingRight: 15,
-                }}
-                size={28}
-              />{" "}
-            </span>
-          </div>
-          <div className="icon-list__img">
-            <span>
-              <GrStripe
-                style={{
-                  color: "#6772E5",
-                  paddingTop: 3,
-                  paddingRight: 15,
-                  paddingLeft: 10,
-                }}
-                size={28}
-              />{" "}
-            </span>
-          </div>
+          <HashLink
+            className="projects__btn"
+            to={{ pathname: "https://bikes-avenue.herokuapp.com/" }}
+            target="_blank"
+          >
+            {" "}
+            <Button name="View Detals" />
+          </HashLink>
         </div>
-        <div className="icon-list-container ecom"></div>
-        <HashLink
-          to={{ pathname: "https://bikes-avenue.herokuapp.com/" }}
-          target="_blank"
+      </div>
+
+      {/* project 2 */}
+
+      <hr className="rounded2" />
+      <div className="projects">
+        <span
+          className="projects projects__img"
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
         >
-          {" "}
-          <Button name="View Detals" />
-        </HashLink>
+          <img className="myimage" src={ProjectImage2} alt="projectimage-2" />
+        </span>
+
+        <div
+          className="projects__content"
+          data-aos="zoom-in"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <div className="projects__title">Social Media App</div>
+          <p className="projects__subtitle">
+            Social media app that you can create your own post, follow a user,
+            and message each other who are using the app.
+          </p>
+
+          <div className="projects__icons">
+            <div className="projects__Iconitem">
+              <span>
+                <AiFillHtml5
+                  style={{
+                    color: "white",
+                    backgroundColor: "#DD4B25",
+                    borderRadius: "50%",
+                    width: "30px",
+                    height: "30px",
+                    padding: "5px",
+                  }}
+                  size={28}
+                />{" "}
+              </span>
+            </div>
+            <div className="projects__Iconitem">
+              <span>
+                <DiCss3
+                  style={{
+                    color: "white",
+                    backgroundColor: "#254BDD",
+                    borderRadius: "50%",
+                    width: "30px",
+                    height: "30px",
+                    padding: "5px",
+                  }}
+                  size={28}
+                />{" "}
+              </span>
+            </div>
+            <div className="projects__Iconitem">
+              <span>
+                <IoLogoJavascript
+                  style={{
+                    color: "white",
+                    backgroundColor: "#EDD718",
+                    borderRadius: "50%",
+                    width: "30px",
+                    height: "30px",
+                    padding: "5px",
+                  }}
+                  size={28}
+                />
+              </span>
+            </div>
+            <div className="projects__Iconitem">
+              <span>
+                <FaNodeJs
+                  style={{
+                    color: "white",
+                    backgroundColor: "#7CB701",
+                    borderRadius: "50%",
+                    width: "30px",
+                    height: "30px",
+                    padding: "5px",
+                  }}
+                  size={28}
+                />
+              </span>
+            </div>
+            <div className="projects__Iconitem">
+              <span>
+                <DiMongodb
+                  style={{
+                    color: "white",
+                    backgroundColor: "#108D4D",
+                    borderRadius: "50%",
+                    width: "30px",
+                    height: "30px",
+                    padding: "5px",
+                  }}
+                  size={28}
+                />
+              </span>
+            </div>
+            <div className="projects__Iconitem">
+              <span>
+                <SiSocketDotIo
+                  style={{
+                    color: "white",
+                    backgroundColor: "black",
+                    borderRadius: "50%",
+                    width: "30px",
+                    height: "30px",
+                    padding: "5px",
+                  }}
+                  size={28}
+                />
+              </span>
+            </div>
+          </div>
+          <HashLink
+            className="projects__btn"
+            to={{ pathname: "https://konneckjs.herokuapp.com/" }}
+            target="_blank"
+          >
+            {" "}
+            <Button name="View Details" />
+          </HashLink>
+        </div>
       </div>
     </div>
-
-    {/* project 2 */}
-
-    <hr className="rounded-2" />
-    <div className="projects-content">
-      <span className="image2-container">
-        <img className="image2" src={ProjectImage2} alt="projectimage-1" />
-      </span>
-
-      <div className="content-1">
-        <div className="social-media-title">Social Media App</div>
-        <p className="Ecommerce-subtitle-1">
-          Social media app that you can create your own post, follow a user, and
-          message each other who are using the app.
-        </p>
-        <span className="worksSubtitle">
-          Design and Develop by Rafael Mendoza.
-        </span>
-        <div className="content-2-icons">
-          <div className="icon-list__img">
-            <span>
-              <AiFillHtml5
-                style={{
-                  color: "#DD4B25",
-                  paddingTop: 3,
-                  paddingRight: 15,
-                }}
-                size={28}
-              />{" "}
-            </span>
-          </div>
-          <div className="icon-list__img">
-            <span>
-              <DiCss3
-                style={{
-                  color: "#3658DE",
-                  paddingTop: 3,
-                  paddingRight: 10,
-                }}
-                size={28}
-              />{" "}
-            </span>
-          </div>
-          <div className="icon-list__img">
-            <span>
-              <IoLogoJavascript
-                style={{
-                  color: "#F5DE19",
-                  paddingTop: 3,
-                  paddingRight: 15,
-                }}
-                size={28}
-              />
-            </span>
-          </div>
-          <div className="icon-list__img">
-            <span>
-              <FaNodeJs
-                style={{
-                  color: "#87BF00",
-                  paddingTop: 2,
-                  paddingRight: 15,
-                }}
-                size={28}
-              />
-            </span>
-          </div>
-          <div className="icon-list__img">
-            <span>
-              <DiMongodb
-                style={{
-                  color: "#13A44D",
-                  paddingTop: 4,
-                  paddingRight: 1,
-                }}
-                size={28}
-              />
-            </span>
-          </div>
-          <div className="icon-list__img">
-            <span>
-              <SiSocketDotIo
-                style={{
-                  color: "#010101",
-                  paddingTop: 4,
-                  paddingRight: 10,
-                }}
-                size={28}
-              />
-            </span>
-          </div>
-        </div>
-        <div className="content-3-icons"></div>
-
-        <HashLink
-          to={{ pathname: "https://konneckjs.herokuapp.com/" }}
-          target="_blank"
-        >
-          {" "}
-          <Button name="View Details" />
-        </HashLink>
-      </div>
-    </div>
-  </div>
-);
+  );
+};
 
 export default Works;

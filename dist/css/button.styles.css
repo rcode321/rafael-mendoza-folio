@@ -1,0 +1,21 @@
+.btn {
+  background-color: #395ab0;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 2rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #5060f1;
+  transition-duration: 0.5s;
+}
+/*# sourceMappingURL=button.styles.css.map */

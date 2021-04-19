@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AA8UA,AAAA,SAAS,CAAC;EACR,OAAO,EAAE,IAAI;CAId;;AAHE,AAAD,eAAO,CAAC;EAdN,SAAS,EAe0B,IAAI;EAPvC,WAAW,EAOY,GAAG;CAC3B",
+    "sources": [
+        "../../src/pages/works/works.styles.scss"
+    ],
+    "names": [],
+    "file": "works.styles.css"
+}
