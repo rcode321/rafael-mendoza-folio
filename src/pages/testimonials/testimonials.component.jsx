@@ -1,21 +1,18 @@
 import React from "react";
 import OverlayLines from "../../assets/bg-stripes.svg";
 import "./testimonials.styles.scss";
-import ReferenceImage from "../../assets/unnamed.jpg";
+import ReferenceImage from "../../assets/mark dino.jpg";
 const Testimonials = () => (
   <div>
     <div className="Testimonials-container">
       <img className="OverlayLines" src={OverlayLines} alt="OverlayLines" />
       <div className="quote">
         <div className="testimonials-content">
-          <span className="testimonials">Testimonials</span>
-          <p className="testimonials-subtitle">
-            People I've worked with have said some nice things...
-          </p>
           <p className="message">
-            "Rafael is not only great for design and development, he is a
-            problem solver who always delivers an exceptional quality of work.
-            Highly recommended".
+            "It is a distinct pleasure for me to recommend Rafael to any and all
+            interested in building quality websites, He is a telented hard
+            working individual who has a lot potential to become a great
+            developer. Highly recommended."
           </p>
         </div>
         <div className="quote-img">
@@ -24,9 +21,9 @@ const Testimonials = () => (
             src={ReferenceImage}
             alt="Referenceimg"
           />
-          <p className="client-name">Jaime Alano</p>
-          <a href="#/" target="_blank">
-            Owner Roblox Studio
+          <p className="client-name">Mark Dino</p>
+          <a rel="noreferrer" href="https://www.markdino.com/" target="_blank">
+            Junior Engineer @ Damstra
           </a>
         </div>
       </div>

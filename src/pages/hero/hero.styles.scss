@@ -3,14 +3,7 @@
   height: 700px;
   width: 100%;
   position: relative;
-
-  // -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 88%);
-  // clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 88%);
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
-
-  // -webkit-clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
-  // clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
 
   @media (max-width: 902px) {
     display: flex;
@@ -77,12 +70,16 @@
         margin-bottom: 1em;
         margin-top: 1rem;
       }
+
+      .site-banner-p {
+        font-weight: 300;
+      }
     }
 
     .hello-title {
       font-size: 10rem;
       margin: 0;
-      color: #f3f3f3;
+      color: #f1f1f1;
       padding-top: 5rem;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;

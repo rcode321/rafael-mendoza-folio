@@ -20,10 +20,10 @@ import ProjectImage2 from "../../assets/project2.png";
 import Button from "../../components/button/button.component";
 import "./works.styles.scss";
 import { HashLink } from "react-router-hash-link";
-// import { Link, Router } from "react-router-dom";
+
 const Works = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ once: true, duration: 1000 });
   }, []);
 
   return (

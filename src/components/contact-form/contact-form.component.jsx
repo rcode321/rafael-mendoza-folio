@@ -11,10 +11,11 @@ function ContactUs() {
 
     emailjs
       .sendForm(
-        "service_a567z4i",
-        "template_w75muai",
+        // "service_a567z4i",
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         e.target,
-        "user_dAxdFSiC58Nw5KYJAqVBW"
+        process.env.REACT_APP_EMAILJS_USER_ID
       )
       .then(
         (result) => {

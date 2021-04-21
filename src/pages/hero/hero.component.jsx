@@ -11,8 +11,8 @@ const Hero = () => (
       <div className="site-banner_content">
         <h1 className="hello-title">Hello.</h1>
 
-        <p className="site-banner-p">
-          My name is Rafael Mendoza.
+        <p className="site-banner-p ">
+          I'm Rafael Mendoza. {""}
           <Typical
             loop={Infinity}
             className="aniText"
