@@ -18,11 +18,15 @@
     height: 90%;
   }
   @media (max-width: 490px) {
-    padding-top: 6rem;
+    padding-top: 10rem;
     margin-bottom: 5rem;
   }
   @media (max-width: 360px) {
     height: 500px;
+  }
+  @media (max-width: 320px) {
+    padding-bottom: 65rem;
+    margin: 0;
   }
 
   .OverlayLines {
@@ -138,9 +142,16 @@
 .testimonials {
   font-size: 3rem;
   font-weight: 700;
+
+  @media (max-width: 320px) {
+    font-size: 2rem;
+  }
 }
 
 .testimonials-subtitle {
   font-size: 1.8rem;
   font-weight: 400;
+  @media (max-width: 320px) {
+    font-size: 1.4rem;
+  }
 }

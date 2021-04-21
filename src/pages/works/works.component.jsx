@@ -15,16 +15,17 @@ import { FaNodeJs } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
 import { SiSocketDotIo } from "react-icons/si";
 
-import ProjectImage1 from "../../assets/project2.png";
-import ProjectImage2 from "../../assets/project1.png";
+import ProjectImage1 from "../../assets/project1.png";
+import ProjectImage2 from "../../assets/project2.png";
 import Button from "../../components/button/button.component";
 import "./works.styles.scss";
 import { HashLink } from "react-router-hash-link";
-
+// import { Link, Router } from "react-router-dom";
 const Works = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+
   return (
     <div className="project--container" id="project">
       <div className="featured-projects">featured projects</div>
@@ -125,7 +126,18 @@ const Works = () => {
             target="_blank"
           >
             {" "}
-            <Button name="View Detals" />
+            <Button>View Site</Button>
+          </HashLink>
+
+          <HashLink
+            to={{
+              pathname:
+                "https://github.com/rcode321/ecom-bikeshop-with-live-stripe",
+            }}
+            target="_blank"
+          >
+            {" "}
+            <Button icon>{`<Source Code/>`}</Button>
           </HashLink>
         </div>
       </div>
@@ -251,7 +263,16 @@ const Works = () => {
             target="_blank"
           >
             {" "}
-            <Button name="View Details" />
+            <Button>View Site</Button>
+          </HashLink>
+          <HashLink
+            to={{
+              pathname: "https://github.com/rcode321/konnekjs",
+            }}
+            target="_blank"
+          >
+            {" "}
+            <Button icon>{`<Source Code/>`}</Button>
           </HashLink>
         </div>
       </div>

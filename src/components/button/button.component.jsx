@@ -1,7 +1,12 @@
 import React from "react";
+// import { AiFillGithub } from "react-icons/ai";
 
 import "./button.styles.scss";
 
-const Button = (props) => <button className="btn">{props.name}</button>;
+const Button = ({ children, icon, ...otherProps }) => (
+  <button className={`${icon ? "github-code-btn" : ""} btn`} {...otherProps}>
+    {children}
+  </button>
+);
 
 export default Button;

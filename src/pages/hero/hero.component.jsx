@@ -2,13 +2,15 @@ import React, { useRef } from "react";
 import Typical from "react-typical";
 // import imageProfile from "../../assets/image.png";
 import Myimage from "../../assets/hero image2.png";
+
 import "./hero.styles.scss";
 
 const Hero = () => (
   <div className="hero-container">
     <div className="site-banner_inner">
       <div className="site-banner_content">
-        <h1>Hello.</h1>
+        <h1 className="hello-title">Hello.</h1>
+
         <p className="site-banner-p">
           My name is Rafael Mendoza.
           <Typical

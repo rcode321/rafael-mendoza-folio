@@ -1,7 +1,6 @@
 import React from "react";
 import { HashLink } from "react-router-hash-link";
-import { Link, Switch, Route } from "react-router-dom";
-// import HeroBgFooter from "../../assets/Hero BG-footer.png";
+
 import {
   AiOutlineMail,
   AiFillGithub,
@@ -9,8 +8,6 @@ import {
   AiFillLinkedin,
 } from "react-icons/ai";
 
-// import ContactUs from "../../components/contact-form/contact-form.component";
-import Button from "../../components/form-btn/form-btn.component";
 import FormBtn from "../../components/form-btn/form-btn.component";
 import "./contacts.styles.scss";
 

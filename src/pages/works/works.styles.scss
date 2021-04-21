@@ -122,7 +122,7 @@ $grey-emperor: #4f4a4a;
       padding: 0;
     }
     &__img .myimage {
-      max-width: 80%;
+      max-width: 90%;
 
       @include respond(large) {
         max-width: 600px;

@@ -8,12 +8,28 @@
   display: inline-block;
   font-size: 16px;
   font-weight: 600;
-  margin-top: 2rem;
+  margin-top: 1rem;
   border-radius: 0.3rem;
   cursor: pointer;
-
+  margin-right: 1rem;
+  position: relative;
   &:hover {
     background-color: rgb(80, 96, 241);
     transition-duration: 0.5s;
+  }
+
+  &.github-code-btn {
+    background-color: black;
+    &:hover {
+      background-color: transparent;
+      color: black;
+      border-style: solid;
+      transition-duration: 0.4s;
+      border-width: 1px;
+
+      a {
+        color: black;
+      }
+    }
   }
 }
