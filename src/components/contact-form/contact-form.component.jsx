@@ -32,7 +32,7 @@ function ContactUs() {
   return (
     <>
       <section className="contact-me">
-        <div className="contactTitle">Contact me</div>
+        <div className="contactTitle">Contact me.</div>
         <p className="form-subtitle">
           If you wanna get in touch and talk about you project's idea feel free
           to reach out through social media platforms or send me an email .
