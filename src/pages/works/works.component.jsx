@@ -161,8 +161,8 @@ const Works = () => {
         >
           <div className="projects__title">Social Media App</div>
           <p className="projects__subtitle">
-            Social media app that you can create your own post, follow a user,
-            and message each other who are using the app.
+            An app that you can create your own post, follow a user, search for
+            posts and send messages.
           </p>
 
           <div className="projects__icons">

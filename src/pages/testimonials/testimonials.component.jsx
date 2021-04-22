@@ -10,8 +10,8 @@ const Testimonials = () => (
         <div className="testimonials-content">
           <p className="message">
             "It is a distinct pleasure for me to recommend Rafael to any and all
-            interested in building quality websites, He is a telented hard
-            working individual who has a lot potential to become a great
+            interested in building quality websites, He is a talented hard
+            working individual who has a lot of potential to become a great
             developer. Highly recommended."
           </p>
         </div>

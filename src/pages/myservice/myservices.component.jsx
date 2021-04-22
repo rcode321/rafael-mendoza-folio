@@ -26,7 +26,7 @@ const Myservices = () => {
               <p className="pen-title">Web Design</p>
               <p className="pen-subtitle">
                 A website should be designed for all people who will use it, and
-                should be user friendly as the main focus.
+                should be user friendly with focus on simplicity.
               </p>
             </span>
             <span className="pc">
@@ -36,8 +36,9 @@ const Myservices = () => {
               {/* <RiComputerLine style={{ color: "#ffca42" }} />*/}
               <p className="pc-title">Web Development</p>
               <p className="pc-subtitle">
-                A website should be designed for all the people who will use it,
-                and user friendly is the main focused.
+                The main focus should always be to create consistent and
+                efficient web applications and services, must always strive to
+                meet the necessities of clients.
               </p>
             </span>
           </div>
