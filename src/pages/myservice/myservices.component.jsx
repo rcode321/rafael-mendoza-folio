@@ -18,27 +18,34 @@ const Myservices = () => {
       <div className="service-content">
         <img className="Bgseperator" src={Bgseperator} alt="Bgseperator" />
         <div className="tech-icon-container">
-          <div className="tech-icon">
-            <span className="pen">
-              <div className="myservices-1">
-                <img src={Myservices1} alt="myservices-1" />
+          <div className="tech-icon-content">
+            <span className="tech-icon-image">
+              <div className="tech-myservices">
+                <img
+                  className="myservices-img1"
+                  src={Myservices1}
+                  alt="myservices-1"
+                />
               </div>
-              <p className="pen-title">Web Design</p>
-              <p className="pen-subtitle">
+              <p className="tech-title">Web Design</p>
+              <p className="tech-subtitle">
                 A website should be designed for all people who will use it, and
                 should be user friendly with focus on simplicity.
               </p>
             </span>
-            <span className="pc">
-              <div className="myservices-2">
-                <img src={Myservices2} alt="myservices2" />
+            <span className="tech-icon-image">
+              <div className="tech-myservices">
+                <img
+                  className="myservices-img2"
+                  src={Myservices2}
+                  alt="myservices2"
+                />
               </div>
               {/* <RiComputerLine style={{ color: "#ffca42" }} />*/}
-              <p className="pc-title">Web Development</p>
-              <p className="pc-subtitle">
+              <p className="tech-title-2">Web Development</p>
+              <p className="tech-subtitle2">
                 The main focus should always be to create consistent and
-                efficient web applications and services, must always strive to
-                meet the necessities of clients.
+                efficient web applications and services,
               </p>
             </span>
           </div>
