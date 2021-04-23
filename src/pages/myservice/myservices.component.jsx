@@ -45,7 +45,7 @@ const Myservices = () => {
               <p className="tech-title-2">Web Development</p>
               <p className="tech-subtitle2">
                 The main focus should always be to create consistent and
-                efficient web applications and services,
+                efficient web applications and services.
               </p>
             </span>
           </div>
