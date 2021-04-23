@@ -50,7 +50,7 @@ const Contacts = () => (
                       paddingRight: 15,
                       color: "#ffff",
                     }}
-                    size={45}
+                    size={39}
                   />
                 </span>
                 <HashLink
@@ -74,12 +74,12 @@ const Contacts = () => (
                       paddingRight: 15,
                       color: "#4C9BE5",
                     }}
-                    size={45}
+                    size={39}
                   />
                 </span>
                 <HashLink
                   className="link"
-                  to={{ pathname: "https://twitter.com/RafaelM77744594" }}
+                  to={{ pathname: "https://twitter.com/RafaelM77743994" }}
                   target="_blank"
                 >
                   {" "}
@@ -96,7 +96,7 @@ const Contacts = () => (
                       paddingRight: 15,
                       color: "#0275B4",
                     }}
-                    size={45}
+                    size={39}
                   />
                 </span>
                 <HashLink

@@ -21,9 +21,9 @@ const Testimonials = () => (
             src={ReferenceImage}
             alt="Referenceimg"
           />
-          <p className="client-name">Mark Dino</p>
+          <p className="client-name">Mark Dino Pelonia</p>
           <a rel="noreferrer" href="https://www.markdino.com/" target="_blank">
-            Junior Engineer @ Damstra
+            Junior Engineer @ Damstra Technology
           </a>
         </div>
       </div>
