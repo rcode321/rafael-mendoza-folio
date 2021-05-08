@@ -79,7 +79,7 @@ const Contacts = () => (
                 </span>
                 <HashLink
                   className="link"
-                  to={{ pathname: "https://twitter.com/RafaelM77743994" }}
+                  to={{ pathname: "https://twitter.com/RafaelM77744594" }}
                   target="_blank"
                 >
                   {" "}
